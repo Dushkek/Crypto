@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cryptocurrency</string>
+    <string name="cryptocurrencies">Cryptocurrencies</string>
+    <string name="list">Listдис</string>
+    <string name="converter">Converter</string>
+    <string name="detailOfCrypto">Detail of crypto</string>
+    <string name="filter">Filter</string>
+    <string name="version">version</string>
+</resources>

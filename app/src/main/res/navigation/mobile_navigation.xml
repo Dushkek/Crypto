@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/listOfCryptoFragment">
+
+    <fragment
+        android:id="@+id/converterOfCryptoFragment"
+        android:name="by.adush.cryptocurrency.ui.converter.ConverterFragment"
+        android:label="@string/converter"
+        tools:layout="@layout/converter_fragment" />
+    <fragment
+        android:id="@+id/listOfCryptoFragment"
+        android:name="by.adush.cryptocurrency.ui.list.ListFragment"
+        android:label="@string/list"
+        tools:layout="@layout/list_fragment">
+        <action
+            android:id="@+id/action_listOfCryptoFragment_to_cryptoDetailFragment"
+            app:destination="@id/cryptoDetailFragment"
+            app:popUpTo="@+id/listOfCryptoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryptoDetailFragment"
+        android:name="by.adush.cryptocurrency.ui.detail.CryptoDetailFragment"
+        android:label="@string/detailOfCrypto"
+        tools:layout="@layout/crypto_detail_fragment" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="by.adush.cryptocurrency.ui.filter.FilterFragment"
+        android:label="@string/filter"
+        tools:layout="@layout/filter_layout">
+        <action
+            android:id="@+id/action_filterFragment_to_listOfCryptoFragment"
+            app:destination="@id/listOfCryptoFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

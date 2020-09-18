@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Курсы криптовалют</string>
+    <string name="cryptocurrencies">Криптовалюты</string>
+    <string name="list">Список валют</string>
+    <string name="converter">Конвертер</string>
+    <string name="detailOfCrypto">Детали</string>
+    <string name="filter">Фильтр</string>
+    <string name="version">версия</string>
+</resources>
